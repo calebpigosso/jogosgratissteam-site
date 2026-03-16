@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogos Grátis na Steam</title>
+  <style>
+    :root {
+      --bg: #0b1021;
+      --panel: #141a33;
+      --stroke: #243056;
+      --primary: #7ac3ff;
+      --accent: #20c997;
+      --text: #eef2ff;
+    }
+    * {box-sizing: border-box;}
+    body {
+      margin: 0;
+      padding: 32px;
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at 20% 20%, rgba(32,201,151,0.08), transparent 35%), radial-gradient(circle at 80% 0%, rgba(122,195,255,0.10), transparent 35%), var(--bg);
+      color: var(--text);
+    }
+    header {
+      max-width: 1080px;
+      margin: 0 auto 28px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 3vw, 40px);
+    }
+    p.lead {
+      margin: 0;
+      opacity: 0.82;
+      line-height: 1.5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--stroke);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      transition: transform .18s, box-shadow .18s, border-color .18s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+      border-color: rgba(32,201,151,0.65);
+    }
+    .title {
+      font-size: 20px;
+      margin: 8px 0 6px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #041221;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+      max-width: 1080px;
+      margin: 28px auto 0;
+      font-size: 13px;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+      <span class="tag" style="background:rgba(122,195,255,0.12);color:var(--primary);border:1px solid var(--stroke);">www.jogosgratisteam.com.br</span>
+      <span class="tag">Free to Play</span>
+    </div>
+    <h1>Baixe agora — jogos 100% gratuitos na Steam</h1>
+    <p class="lead">Clique em “Baixar na Steam” para ir direto à página oficial de cada jogo.</p>
+  </header>
+
+  <section class="grid">
+    <article class="card">
+      <span class="tag">Free to Play</span>
+      <h2 class="title">Counter-Strike 2</h2>
+      <p>Shooter competitivo da Valve com matchmaking Premier, anticheat VAC e atualizações constantes.</p>
+      <a href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank" rel="noopener">Baixar na Steam</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Free to Play</span>
+      <h2 class="title">Dota 2</h2>
+      <p>MOBA 5v5 com todos os heróis liberados e patches frequentes que mantêm o meta vivo.</p>
+      <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank" rel="noopener">Baixar na Steam</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Free to Play</span>
+      <h2 class="title">Team Fortress 2</h2>
+      <p>Clássico FPS em equipes; escolha entre 9 classes e dispute modos como Payload e Capture the Flag.</p>
+      <a href="https://store.steampowered.com/app/440/Team_Fortress_2/" target="_blank" rel="noopener">Baixar na Steam</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Free to Play</span>
+      <h2 class="title">Warframe</h2>
+      <p>Action looter cooperativo de ninjas espaciais, com progressão profunda e eventos sazonais.</p>
+      <a href="https://store.steampowered.com/app/230410/Warframe/" target="_blank" rel="noopener">Baixar na Steam</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Free to Play</span>
+      <h2 class="title">Apex Legends</h2>
+      <p>Battle royale de heróis da Respawn; squads de 3 com habilidades únicas e crossplay.</p>
+      <a href="https://store.steampowered.com/app/1172470/Apex_Legends/" target="_blank" rel="noopener">Baixar na Steam</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Free to Play</span>
+      <h2 class="title">Destiny 2</h2>
+      <p>MMO shooter da Bungie; a base “New Light” é gratuita, com raides e temporadas opcionais.</p>
+      <a href="https://store.steampowered.com/app/1085660/Destiny_2/" target="_blank" rel="noopener">Baixar na Steam</a>
+    </article>
+  </section>
+
+  <footer>
+    Links abrem em nova aba e levam direto ao site oficial da Steam.
+  </footer>
+</body>
+</html>
